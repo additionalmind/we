@@ -1,8 +1,11 @@
-<div class='logo'>
-  <%#= link_to Refinery::Core.site_name, refinery.root_path %>
-</div>
-<%= render(:partial => "/refinery/menu", :locals => {
+<div class="left-header"></div>
+<div class="header-bg">
+	<div class='logo'>
+  		<%#= link_to Refinery::Core.site_name, refinery.root_path %>
+	</div>
+	<%= render(:partial => "/refinery/menu", :locals => {
              :dom_id => 'menu',
              :css => 'menu'
            }) %>
-<div class="last-menu-sep"></div>
+	<div class ="last-menu-sep"></div>
+</div>

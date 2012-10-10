@@ -6,19 +6,39 @@
     <%= site_bar -%>
     <%= render '/refinery/ie6check' if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <div id="page_container">
-      <header id="header">
-        <%= render '/refinery/header' -%>
-      </header>
+
+        <header id="header">
+          <%= render '/refinery/header' -%>
+        </header>
+
       <section id="page">
         <%= yield %>
       </section>
+
+      <div class="mainline"></div>
+
+      <div class="questions">
+        <h2 id="text">Har du frågor?</h2> 
+        <h2 id="text">Våra nyheter</h2>
+        <h2 id="text">Bildgalleriet</h2>
+      </div>
+
       <section id="gallery">
+
+        
+        <div class="window1"></div>
+        <div class="window2"></div>
+        <div class="window3"></div>
         <%= yield :gallery %>
+        <%#= render '/refinery/gallery' -%>
       </section>
+      
       <footer id="footer">
         <%= render '/refinery/footer' -%>
       </footer>
     </div>
+
     <%= render '/refinery/javascripts' %>
+
   </body>
 </html>

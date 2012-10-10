@@ -1,9 +1,10 @@
 <%= @page.title = "" %>
+<%#= @page.body_content_title = "" %>
 <% content_for :gallery do %>
   <ul id='gallery'>
     <% @page.images.each_with_index do |image, index| %>
       <li>
-        <%= link_to image_tag(image.thumbnail("456x365#c").url), image.thumbnail("900x600").url %>
+        <%= link_to image_tag(image.thumbnail("56x65#c").url), image.thumbnail("900x600").url %>
         <span class='caption'><%=raw @page.caption_for_image_index(index) %></span>
       </li>
    <% end %>
@@ -11,4 +12,5 @@
 <% end %>
 <%= render :partial => "/refinery/content_page" %>
 <%#= render '/refinery/content_page' %>
+
 

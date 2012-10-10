@@ -51,3 +51,5 @@ gem 'refinerycms-i18n', '~> 2.0.0'
 
 # Image engine/tab yo pages
 gem 'refinerycms-page-images', '~> 2.0.0'
+# Contact form gem
+gem 'refinerycms-inquiries', '~> 2.0.0'
